@@ -8,7 +8,7 @@ import (
 
 type ProductRepositoryInterface interface {
 	CreateProduct(product *Product) error
-	FindProducts() (*Product, error)
+	FindProducts() ([]Product, error)
 }
 
 type Product struct {

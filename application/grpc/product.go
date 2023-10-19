@@ -23,7 +23,7 @@ func (p *ProductGrpcService) CreateProduct(ctx context.Context, in *pb.CreatePro
 	}}, nil
 }
 
-func (p *ProductGrpcService) FindProducts(ctx context.Context) (*pb.FindProductsResponse, error) {
+func (p *ProductGrpcService) FindProducts(ctx context.Context, response *pb.FindProductsRequest) (*pb.FindProductsResponse, error) {
 	products, err := p.ProductUseCase.FindProducts()
 	if err != nil {
 		return nil, err

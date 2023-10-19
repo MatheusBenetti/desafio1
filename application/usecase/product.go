@@ -26,5 +26,5 @@ func (p *ProductUseCase) FindProducts() ([]model.Product, error) {
 		return nil, err
 	}
 
-	return []model.Product{*products}, nil
+	return products, nil
 }

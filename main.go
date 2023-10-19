@@ -1,4 +1,7 @@
-package Desafio1
+/*
+Copyright © 2023 NAME HERE <EMAIL ADDRESS>
+*/
+package main
 
 import "github.com/MatheusBenetti/desafio1/cmd"
 
